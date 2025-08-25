@@ -48,7 +48,10 @@ body{
     margin-left: 10px;
     color: #8CB7F5;
 }
-
+.header .nav .links{
+    width: auto;
+    align-items: end;
+}
 .header .nav .links ul{
     display: flex;
     list-style: none;
@@ -61,7 +64,7 @@ body{
     flex-direction: column;
     align-items: center;
     color: #8B96A5;
-    font-size: clamp(12px, 1.5vw, 14px);
+    font-size: clamp(10px, 12px, 13px);
     justify-content: center;
     gap: 5px;
 }
@@ -130,6 +133,25 @@ body{
 
 }
 
+.secondary-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(10px, 2.5vw, 20px);
+    position: relative;
+    margin-top: 1px;
+    top: clamp(50px, 0px, 0px);
+}
+.secondary-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: clamp(12px, 2vw, 16px);
+}
+
 @media (max-width: 768px) {
     .mob-display{
         display: none;
@@ -144,7 +166,7 @@ body{
         border-color: #DEE2E7;
     }
     .header .nav .search form input[type="text"]{
-        width: 70%;
+        width: 75%;
         font-size: clamp(12px, 4vw, 16px);
     }
     .header .logo .menu-btn{
