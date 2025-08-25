@@ -36,7 +36,8 @@ body{
 .header .nav .logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 .header .nav .logo img{
     width: 44px;
@@ -112,4 +113,44 @@ body{
     min-width: 100px;
     height: 40px;
     font-size: clamp(12px, 2vw, 16px);
+}
+.header .logo .menu-btn{
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+    align-self: center;
+    margin-top: 5%;
+}
+.header .logo .menu-btn .bar{
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+}
+
+@media (max-width: 768px) {
+    .mob-display{
+        display: none;
+    }
+    .header .nav .search form{
+        position: absolute;
+        top: 70px;
+        left: 35px;
+        width: 85%;
+        margin: auto;
+        display: block;
+        border-color: #DEE2E7;
+    }
+    .header .nav .search form input[type="text"]{
+        width: 70%;
+        font-size: clamp(12px, 4vw, 16px);
+    }
+    .header .logo .menu-btn{
+        display: block;
+    }
+    .header .nav .links{
+        align-items: flex-end;
+    }
 }

@@ -12,19 +12,24 @@
 <body>
     <div class="header col-lg-12 col-sm-12">
         <div class="nav row">
-            <div class="logo col-lg-2 col-sm-1 ">
+            <div class="logo col-lg-2 col-sm-2 col-md-2 ">
+                <div class="menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
                 <img src="assets/logo-symbol.png" alt="Nexus Logo">
                 <span>Nexus</span>
             </div>
             <div class="search col-lg-6 col-sm-6">
                 <form action="">
                     <input type="text" placeholder="Search">
-                    <select name="" id="">
+                    <select name="" id="" class="mob-display">
                         <option value="">All Categories</option>
                         <option value="">Category 1</option>
                         <option value="">Category 2</option>
                     </select>
-                    <button type="submit">Search</button>
+                    <button type="submit" class="mob-display">Search</button>
                 </form>
             </div>
             <div class="links col-lg-3">
@@ -32,16 +37,16 @@
                     <li>
                         <a href="#">
                             <img src="assets/user.png" alt="">
-                            <span class="text">Profile</span>
+                            <span class="text mob-display">Profile</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="mob-display">
                         <a href="#">
                             <img src="assets/msg.png" alt="">
                             <span class="text">Message</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="mob-display">
                         <a href="#">
                             <img src="assets/like.png" alt="">
                             <span class="text">Orders</span>
@@ -50,7 +55,7 @@
                     <li>
                         <a href="#">
                             <img src="assets/cart.png" alt="">
-                            <span class="text">My cart</span>
+                            <span class="text mob-display">My cart</span>
                         </a>
                     </li>
                 </ul>
