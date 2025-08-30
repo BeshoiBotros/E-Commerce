@@ -118,3 +118,36 @@ header .header .product-image img{
     height: 632px;
     width: auto;
 }
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+    width: 100%;
+}
+
+section .content{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+section .content .txt{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 15px;
+}
+section .content img{
+    width: 360px;
+}
+section .content h1{
+    color: #000;
+    font-size: 49px;
+    font-weight: 400;
+}
+section .content p{
+    color: #909090;
+}
