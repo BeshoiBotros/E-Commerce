@@ -121,10 +121,12 @@ header .header .product-image img{
 
 section{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: stretch;
     min-width: 600px;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 section .content{
@@ -133,21 +135,211 @@ section .content{
     justify-content: center;
     align-items: center;
 }
-section .content .txt{
+section .txt{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
     gap: 15px;
 }
-section .content img{
+section .banner img{
     width: 360px;
 }
-section .content h1{
+section .banner h1{
     color: #000;
     font-size: 49px;
     font-weight: 400;
 }
-section .content p{
+section .banner p{
     color: #909090;
 }
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: space-between; */
+    
+}
+.banner .wide{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.left-banner{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 49%;
+}
+
+.big-banner {
+  flex: 1;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+}
+
+.big-banner .txt{
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+}
+.big-banner h1{
+    font-size: 64px;
+    font-weight: 100;
+    color: #000;
+}
+.big-banner p{
+    color: #606060;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.cat{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cat .cat-row{
+    width: 80%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat .cat-row .sliding{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat .cat-row .sliding img{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    cursor: pointer;
+}
+
+.cat-row .cat-card{
+    display: flex;
+    min-width: 160px;
+    min-height: 128px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #EDEDED;
+    border-radius: 15px;
+
+}
+
+.cat-row .cat-card a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.products{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.products .products-nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.products .products-nav li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 500;
+}
+.products .products-nav .selected a{
+    color: black;
+    border-bottom: solid 2px black;
+}
+
+.products .products-view {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products .products-view .card{
+    width: 269px;
+    min-height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #EDEDED;
+    border-radius: 15px;
+}
+
+.products .products-view .card h3{
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+}
+.products .products-view .card p{
+    font-weight: bolder;
+    color: #000;
+    font-size: 24px;
+}
+
+.products .products-view .card .btn-black{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.products .products-view .card .like{
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    align-self: flex-end;
+}
+
